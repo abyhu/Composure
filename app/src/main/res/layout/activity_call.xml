@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".call">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="340dp"
+        android:layout_height="155dp"
+        android:layout_marginLeft="20dp"
+        android:text="Would you like to talk to someone? Calling a friend can help ease some of your worries."
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/call"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:onClick="callhelp"
+        android:scaleType="fitCenter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/phoneicon" />
+
+    <!--<Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goHome"
+        android:text="Home"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="447dp" />-->
+
+    <Button
+        android:id="@+id/nextBreathe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="112dp"
+        android:onClick="nextBreathe"
+        android:text="Next"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/call" />
+
+</android.support.constraint.ConstraintLayout>

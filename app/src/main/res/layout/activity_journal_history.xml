@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JournalHistory">
+
+    <TextView
+        android:id="@+id/journalEntryTitleDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/journalEntryTitleDisplay"
+        app:layout_constraintStart_toStartOf="@+id/rememberGoodDays"
+        app:layout_constraintTop_toBottomOf="@+id/rememberGoodDays" />
+
+    <TextView
+        android:id="@+id/journalEntryDisplay"
+        android:layout_width="300dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/journalEntryDisplay"
+        app:layout_constraintStart_toStartOf="@+id/journalDateDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/journalDateDisplay" />
+
+    <Button
+        android:id="@+id/nextJournalEntry"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="nextJournalEntry"
+        android:text="@string/viewNextEntry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/previousJournalEntry"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="previousJournalEntry"
+        android:text="@string/viewPreviousEntry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextJournalEntry"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/rememberGoodDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/journalHistoryTitle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/journalDateDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/journalDateDisplay"
+        app:layout_constraintStart_toStartOf="@+id/journalEntryTitleDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/journalEntryTitleDisplay" />
+
+</android.support.constraint.ConstraintLayout>

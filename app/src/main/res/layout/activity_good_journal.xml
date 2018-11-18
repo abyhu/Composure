@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GoodJournal">
+
+    <TextView
+        android:id="@+id/journalEntryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/journalEntryTitle"
+        app:layout_constraintBottom_toTopOf="@+id/journalEntryTitleInput"
+        app:layout_constraintStart_toStartOf="@+id/journalEntryTitleInput" />
+
+    <EditText
+        android:id="@+id/journalEntryTitleInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/journalEntryTitleInput"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/journalEntry"
+        app:layout_constraintStart_toStartOf="@+id/journalEntry"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/journalEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/journalEntry"
+        app:layout_constraintBottom_toTopOf="@+id/journalEntryInput"
+        app:layout_constraintStart_toStartOf="@+id/journalEntryInput" />
+
+    <EditText
+        android:id="@+id/journalEntryInput"
+        android:gravity="top"
+        android:layout_width="300dp"
+        android:layout_height="242dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="@string/journalEntryInput"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/saveJournalEntry"
+        app:layout_constraintStart_toStartOf="@+id/saveJournalEntry" />
+
+    <Button
+        android:id="@+id/saveJournalEntry"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="saveJournalEntry"
+        android:text="@string/saveJournalEntryButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/goodJournalPageTitle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/journalEntryTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

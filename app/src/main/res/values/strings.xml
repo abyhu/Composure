@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Explosion</string>
+
+    \\main activity strings
+    <string name="howYouFeelTitle">How Are You Feeling?</string>
+    <string name="emojiGreen">emojigreen</string>
+    <string name="emojiYellow">emojiyellow</string>
+    <string name="emojiRed">emojired</string>
+
+    \\good journal strings
+    <string name="goodJournalPageTitle">Why is it a GOOD day?</string>
+    <string name="journalEntryTitle">Journal Entry Title</string>
+    <string name="journalEntryTitleInput">Journal Entry Title Input</string>
+    <string name="journalEntry">Journal Entry</string>
+    <string name="journalEntryInput">Journal Entry Input</string>
+    <string name="saveJournalEntryButton">Save Journal Entry</string>
+
+    \\history journal display
+    <string name="journalHistoryTitle">Remember these GOOD days? </string>
+    <string name="journalEntryTitleDisplay">Journal Entry Title Display</string>
+    <string name="journalEntryDisplay">Journal Entry Display</string>
+    <string name="viewNextEntry">View Next Entry</string>
+    <string name="viewPreviousEntry">View Previous Entry</string>
+    <string name="journalTitleDisplay">Journal Title Display</string>
+    <string name="journalDateDisplay">Journal Date Display</string>
+    <string name="title_activity_trigger_journal">TriggerJournal</string>
+
+    \\trigger journal
+    <string name="prev">Prev</string>
+    <string name="next">Next</string>
+    <string name="trigger">Please describe what is bothering you right now...</string>
+
+    \\call strings
+
+    <string name="timerTextview"></string>
+    <string name="controllerButton"></string>
+    <string name="timerSeekBar"></string>
+    <string name="launchFit"></string>
+
+
+</resources>
